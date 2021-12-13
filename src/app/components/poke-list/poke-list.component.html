@@ -1,40 +1,33 @@
-<div class="content">
-    <div>
-        <span>
-            <a routerLink="/">
-                <img src="../../../assets/pokeball.svg" alt="Home" width="90" height="90">
-            </a>
-        </span>
-    </div>
-</div>
-
+<app-return></app-return>
 <div id="cards">
-    <figure [ngClass]="'card card--' + pokemon.types[0].type.name" *ngFor="let pokemon of pokemons">
-        <div class="card__image-container">
-            <img [src]="pokemon.sprites.front_default" alt="pikachu" class="card__image">   
-        </div>
-    
-        <figcaption class="card__caption">
+    <a [routerLink]="'/pokedex/' + pokemon.name" *ngFor="let pokemon of pokemons">
+        <figure [ngClass]="'card card--' + pokemon.types[0].type.name">
+            <div class="card__image-container">
+                <img [src]="pokemon.sprites.front_default" alt="pikachu" class="card__image">   
+            </div>
+            
+            <figcaption class="card__caption">
                 <h1 class="card__name">{{pokemon.name}}</h1>
-
-                <h3 class="card__type">
-                {{ pokemon.types[0].type.name }}
-                </h3>
-
-                <table class="card__stats" *ngFor="let stat of pokemon.stats">
-                <tbody><tr>
-                    <th>{{ stat.stat.name }}</th>
-                    <td>{{ stat.base_stat }}</td>
-                </tr>
                 
+                <h3 class="card__type">
+                    {{ pokemon.types[0].type.name }}
+                </h3>
+                
+                <table class="card__stats" *ngFor="let stat of pokemon.stats">
+                    <tbody><tr>
+                        <th>{{ stat.stat.name }}</th>
+                        <td>{{ stat.base_stat }}</td>
+                    </tr>
+                    
                 </tbody></table>
                 
                 <div class="card__abilities">
-                <h4 class="card__ability">
-                    <span class="card__label">Ability</span>
-                    {{ pokemon.abilities[0].ability.name }}
-                </h4>
+                    <h4 class="card__ability">
+                        <span class="card__label">Ability</span>
+                        {{ pokemon.abilities[0].ability.name }}
+                    </h4>
                 </div>
-        </figcaption>
-    </figure>
+            </figcaption>
+        </figure>
+    </a>
 </div>

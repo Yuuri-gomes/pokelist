@@ -15,13 +15,17 @@ h1, h2, h3, h4, h5 {
   font-weight: 400;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 #cards {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-
 
 .card {
   width: 300px;

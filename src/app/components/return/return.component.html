@@ -1,0 +1,16 @@
+<div class="content">
+    <div>
+        <span>
+            <a routerLink="/">
+                <img src="../../../assets/pokeball.svg" alt="Home" width="90" height="90">
+            </a>
+        </span>
+    </div>
+    <div *ngIf="isPokedex">
+        <span>
+            <a routerLink="/poke-list">
+                <img src="../../../assets/return.svg" alt="Return" width="60" height="60">
+            </a>
+        </span>
+    </div>
+</div>

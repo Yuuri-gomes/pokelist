@@ -13,6 +13,8 @@ export interface PokemonModel {
     sprites: { front_default: string };
     stats: Stats[];
     types: Types[];
+    weight: number;
+    height: number;
 }
 
 export interface Abilities {
