@@ -10,7 +10,7 @@ Créditos:
 
 # Imagens
 
-[Home](https://i.imgur.com/d3JThi1.png)
-[Poke list](https://i.imgur.com/kiP5OVf.png)
-[Pokedex](https://i.imgur.com/I0Wu1An.png)
+![Home](https://i.imgur.com/d3JThi1.png)
+![Poke list](https://i.imgur.com/kiP5OVf.png)
+![Pokedex](https://i.imgur.com/I0Wu1An.png)
 
